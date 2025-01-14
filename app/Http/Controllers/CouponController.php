@@ -6,33 +6,20 @@ use Illuminate\Http\Request;
 use App\Models\Cart;
 class CouponController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $coupon=Coupon::orderBy('id','DESC')->paginate('10');
         return view('backend.coupon.index')->with('coupons',$coupon);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function create()
     {
         return view('backend.coupon.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+   
     public function store(Request $request)
     {
         // return $request->all();

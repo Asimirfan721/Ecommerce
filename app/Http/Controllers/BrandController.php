@@ -7,11 +7,7 @@ use App\Models\Brand;
 use Illuminate\Support\Str;
 class BrandController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    
     public function index()
     {
         $brand=Brand::orderBy('id','DESC')->paginate();
