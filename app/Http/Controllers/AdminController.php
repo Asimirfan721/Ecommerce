@@ -123,7 +123,7 @@ class AdminController extends Controller
             // removed the existing symbolic link
             File::delete(public_path('storage'));
 
-            //Regenerate the storage link folder
+             
             try{
                 Artisan::call('storage:link');
                 request()->session()->flash('success', 'Successfully storage linked.');

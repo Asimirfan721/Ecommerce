@@ -16,30 +16,20 @@ class CategoryController extends Controller
     public function index()
     {
         $category=Category::getAllCategory();
-        // return $category;
+   
         return view('backend.category.index')->with('categories',$category);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+ 
     public function create()
     {
         $parent_cats=Category::where('is_parent',1)->orderBy('title','ASC')->get();
         return view('backend.category.create')->with('parent_cats',$parent_cats);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
     public function store(Request $request)
     {
-        // return $request->all();
+        
         $this->validate($request,[
             'title'=>'string|required',
             'summary'=>'string|nullable',
@@ -69,23 +59,13 @@ class CategoryController extends Controller
 
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+   
     public function show($id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function edit($id)
     {
         $parent_cats=Category::where('is_parent',1)->get();
@@ -93,13 +73,7 @@ class CategoryController extends Controller
         return view('backend.category.edit')->with('category',$category)->with('parent_cats',$parent_cats);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function update(Request $request, $id)
     {
         // return $request->all();
@@ -125,12 +99,7 @@ class CategoryController extends Controller
         return redirect()->route('category.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
     public function destroy($id)
     {
         $category=Category::findOrFail($id);
