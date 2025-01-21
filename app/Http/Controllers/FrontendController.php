@@ -102,12 +102,12 @@ class FrontendController extends Controller
       
         return view('frontend.pages.product-grids')->with('products',$products)->with('recent_products',$recent_products);
     }
-    public function productLists(){
+     public function productLists(){
         $products=Product::query();
         
         if(!empty($_GET['category'])){
             $slug=explode(',',$_GET['category']);
-            // dd($slug);
+             // dd($slug);
             $cat_ids=Category::select('id')->whereIn('slug',$slug)->pluck('id')->toArray();
             // dd($cat_ids);
             $products->whereIn('cat_id',$cat_ids)->paginate;
@@ -118,7 +118,7 @@ class FrontendController extends Controller
             $brand_ids=Brand::select('id')->whereIn('slug',$slugs)->pluck('id')->toArray();
             return $brand_ids;
             $products->whereIn('brand_id',$brand_ids);
-        }
+        } 
         if(!empty($_GET['sortBy'])){
             if($_GET['sortBy']=='title'){
                 $products=$products->where('status','active')->orderBy('title','ASC');

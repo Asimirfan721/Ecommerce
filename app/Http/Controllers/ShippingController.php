@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Shipping;
 use App\Models\Coupon;
-
+ 
 class ShippingController extends Controller
 {
     /**
@@ -54,7 +54,7 @@ class ShippingController extends Controller
         return redirect()->route('shipping.index');
     }
 
-    /**
+    /** 
      * Display the specified resource.
      *
      * @param  int  $id

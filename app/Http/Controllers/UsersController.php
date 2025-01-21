@@ -17,7 +17,7 @@ class UsersController extends Controller
         $users=User::orderBy('id','ASC')->paginate(10);
         return view('backend.users.index')->with('users',$users);
     }
-
+  
     /**
      * Show the form for creating a new resource.
      *

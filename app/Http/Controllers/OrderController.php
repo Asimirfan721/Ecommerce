@@ -50,14 +50,14 @@ class OrderController extends Controller
         if(empty(Cart::where('user_id',auth()->user()->id)->where('order_id',null)->first())){
             request()->session()->flash('error','Cart is Empty !');
             return back();
-        }
+        } 
         // $cart=Cart::get();
         // // return $cart;
         // $cart_index='ORD-'.strtoupper(uniqid());
         // $sub_total=0;
         // foreach($cart as $cart_item){
         //     $sub_total+=$cart_item['amount'];
-        //     $data=array(
+        //     $data=array(   
         //         'cart_id'=>$cart_index,
         //         'user_id'=>$request->user()->id,
         //         'product_id'=>$cart_item['id'],
@@ -66,7 +66,7 @@ class OrderController extends Controller
         //         'status'=>'new',
         //         'price'=>$cart_item['price'],
         //     );
-
+   
         //     $cart=new Cart();
         //     $cart->fill($data);
         //     $cart->save();

@@ -61,7 +61,7 @@ class PostCategoryController extends Controller
         $postCategory=PostCategory::findOrFail($id);
         return view('backend.postcategory.edit')->with('postCategory',$postCategory);
     }
-
+ 
     /**
      * Update the specified resource in storage.
      *
@@ -80,14 +80,14 @@ class PostCategoryController extends Controller
         $data=$request->all();
         $status=$postCategory->fill($data)->save();
         if($status){
-            request()->session()->flash('success','Post Category Successfully updated');
+             request()->session()->flash('success','Post Category Successfully updated');
         }
         else{
             request()->session()->flash('error','Please try again!!');
         }
         return redirect()->route('post-category.index');
     }
-
+ 
     /**
      * Remove the specified resource from storage.
      *
@@ -102,7 +102,7 @@ class PostCategoryController extends Controller
         
         if($status){
             request()->session()->flash('success','Post Category successfully deleted');
-        }
+        } 
         else{
             request()->session()->flash('error','Error while deleting post category');
         }

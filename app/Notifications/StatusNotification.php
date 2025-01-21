@@ -65,7 +65,7 @@ class StatusNotification extends Notification
     public function toArray($notifiable)
     {
         return [
-            'title'=>$this->details['title'],
+            'title'=>$this->details['title '],
             'actionURL'=>$this->details['actionURL'],
             'fas'=>$this->details['fas']
         ];

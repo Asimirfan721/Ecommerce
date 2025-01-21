@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ 
 use Illuminate\Http\Request;
 use App\Models\PostTag;
 use Illuminate\Support\Str;
@@ -16,18 +16,18 @@ class PostTagController extends Controller
     {
         $postTag=PostTag::orderBy('id','DESC')->paginate(10);
         return view('backend.posttag.index')->with('postTags',$postTag);
-    }
+    } 
 
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
-     */
+     */ 
     public function create()
     {
         return view('backend.posttag.create');
     }
-
+  
     /**
      * Store a newly created resource in storage.
      *
