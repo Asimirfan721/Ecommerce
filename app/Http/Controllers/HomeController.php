@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\User;
 use App\Models\Order;
 use App\Models\ProductReview;
-use App\Models\PostComment;
+use App\Models\PostComment;   
 use App\Rules\MatchOldPassword;
 use Hash;
 

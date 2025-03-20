@@ -12,7 +12,7 @@ use App\Models\Brand;
 use App\User;
 use Auth;
 use Session;
-use Newsletter;
+use Newsletter;   
 use DB;
 use Hash;
 use Illuminate\Support\Str;
