@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers; // define namespace 
 
-use Illuminate\Http\Request;
+use Illuminate\Http\Request;   
 use App\Models\Settings;
 use App\User;
 use App\Rules\MatchOldPassword;
