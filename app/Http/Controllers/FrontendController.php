@@ -6,8 +6,8 @@ use App\Models\Product;
 use App\Models\Category;
 use App\Models\PostTag;
 use App\Models\PostCategory;
-use App\Models\Post;
-use App\Models\Cart;
+use App\Models\Post;  // models
+use App\Models\Cart; //models
 use App\Models\Brand;
 use App\User;
 use Auth;
