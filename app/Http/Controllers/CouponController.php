@@ -11,16 +11,16 @@ class CouponController extends Controller
     {
         $coupon=Coupon::orderBy('id','DESC')->paginate('10');
         return view('backend.coupon.index')->with('coupons',$coupon);
-    }
+    }   
 
     
     public function create()
     {
-        return view('backend.coupon.create');
+        return view('backend.coupon.create'); // retunr view
     }
 
    
-    public function store(Request $request)
+    public function store(Request $request) // request 
     {
         // return $request->all();
         $this->validate($request,[
