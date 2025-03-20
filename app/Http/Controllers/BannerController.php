@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Banner;
 use Illuminate\Support\Str;
-class BannerController extends Controller
+class BannerController extends Controller  // banner extends simple and main controller 
 {
        public function index()
     {
-        $banner=Banner::orderBy('id','DESC')->paginate(10);
+        $banner=Banner::orderBy('id','DESC')->paginate(10);  // banner created
         return view('backend.banner.index')->with('banners',$banner);
     }
 
