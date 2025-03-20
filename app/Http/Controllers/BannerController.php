@@ -16,7 +16,7 @@ class BannerController extends Controller  // banner extends simple and main con
      
     public function create()
     {
-        return view('backend.banner.create');
+        return view('backend.banner.create'); // retunred
     }
 
    
