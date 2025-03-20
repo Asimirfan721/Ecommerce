@@ -11,7 +11,7 @@ use Helper;
 class CartController extends Controller
 {
     protected $product=null;
-    public function __construct(Product $product){
+    public function __construct(Product $product){   
         $this->product=$product;
     }
 

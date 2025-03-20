@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;  // define controlerr
 
 use Illuminate\Http\Request;
-use App\Models\Category;
+use App\Models\Category; // model
 use Illuminate\Support\Str;
-
+   
 class CategoryController extends Controller
 {
     /**
