@@ -9,7 +9,7 @@ class BrandController extends Controller
 {
     
     public function index()
-    {
+    {   
         $brand=Brand::orderBy('id','DESC')->paginate();
         return view('backend.brand.index')->with('brands',$brand);
     }

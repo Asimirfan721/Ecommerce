@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers;  // define controller 
 use Auth;
 use Illuminate\Http\Request;
-use App\Models\Product;
+use App\Models\Product;  // modeol
 use App\Models\Wishlist;
 use App\Models\Cart;
 use Illuminate\Support\Str;
