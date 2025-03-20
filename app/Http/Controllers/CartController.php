@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;  // modeol
 use App\Models\Wishlist;
 use App\Models\Cart;
-use Illuminate\Support\Str;
+use Illuminate\Support\Str;   
 use Helper;
 class CartController extends Controller
 {
