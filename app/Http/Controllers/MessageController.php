@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 use Auth;
 use Illuminate\Http\Request;
-use App\Models\Message;
-use App\Events\MessageSent;
+use App\Models\Message;  // mdoels 
+use App\Events\MessageSent; // event
 class MessageController extends Controller
 {
     /**

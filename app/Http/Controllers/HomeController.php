@@ -8,7 +8,7 @@ use App\Models\Order;
 use App\Models\ProductReview;
 use App\Models\PostComment;   
 use App\Rules\MatchOldPassword;
-use Hash;
+use Hash;    
 
 class HomeController extends Controller
 {
