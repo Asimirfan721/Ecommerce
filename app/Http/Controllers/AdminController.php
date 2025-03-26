@@ -5,7 +5,7 @@ namespace App\Http\Controllers; // define namespace
 use Illuminate\Http\Request;   
 use App\Models\Settings;
 use App\User;
-use App\Rules\MatchOldPassword;   
+use App\Rules\MatchOldPassword;    // password 
 use Hash;
 use Carbon\Carbon;
 use Spatie\Activitylog\Models\Activity;
