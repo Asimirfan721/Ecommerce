@@ -11,7 +11,7 @@ class BannerController extends Controller  // banner extends simple and main con
     {
         $banner=Banner::orderBy('id','DESC')->paginate(10);  // banner created
         return view('backend.banner.index')->with('banners',$banner);
-    }
+    }   // banner controller
 
      
     public function create()
