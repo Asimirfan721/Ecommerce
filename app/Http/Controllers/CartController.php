@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;  // define controller 
 use Auth;
 use Illuminate\Http\Request;
-use App\Models\Product;  // modeol
+use App\Models\Product;  // model
 use App\Models\Wishlist;
 use App\Models\Cart;
 use Illuminate\Support\Str;   
