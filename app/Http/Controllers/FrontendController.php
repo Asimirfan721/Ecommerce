@@ -5,7 +5,7 @@ use App\Models\Banner;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\PostTag;
-use App\Models\PostCategory;
+use App\Models\PostCategory; // post category
 use App\Models\Post;  // models
 use App\Models\Cart; //models
 use App\Models\Brand;

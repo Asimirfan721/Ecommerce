@@ -15,7 +15,7 @@ class BrandController extends Controller
     }
 
     /**
-     * Show the form for creating a new resources created .
+     * Show the form for creating a new resources created...
      *brnad controller
      * @return \Illuminate\Http\Response
      */

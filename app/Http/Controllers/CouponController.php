@@ -20,7 +20,7 @@ class CouponController extends Controller
     }
 
    
-    public function store(Request $request) // request 
+    public function store(Request $request) // request    ...
     {
         // return $request->all();
         $this->validate($request,[

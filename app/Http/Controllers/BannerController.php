@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Banner;
 use Illuminate\Support\Str;
-class BannerController extends Controller  // banner extends simple and main controller 
+class BannerController extends Controller  // banner extends simple and main controller  is 
 {
        public function index()
     {
